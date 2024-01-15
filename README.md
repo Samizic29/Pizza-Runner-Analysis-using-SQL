@@ -19,7 +19,7 @@ The exclusions and extras columns will need to be cleaned up before using them i
 <i> Note that customers can order multiple pizzas in a single order with varying exclusions and extras values even if the pizza is the same type!</i>
 
 3.	Runner orders:  The runner_order table captures the pickup_time, distance and duration of each orders assigned to a runner. However not all orders are fully completed and can be cancelled by the restaurant or the customer.
-<i>Note: There are some known data issues with this table that need to be cleaned up using them in the queries.</i>
+<i> Note: There are some known data issues with this table that need to be cleaned up using them in the queries.</i>
 
 4.	Pizza names: The pizza_names table captures the pizzas available in Pizza Runner.
    
@@ -61,7 +61,7 @@ B. Runner and Customer Experience
 - Customer id (103) has the highest pizza orders - 5.
 - Pizzas delivered with both exclusions and extras - 3
 
-## Conclusions
+## Conclusion
 > I was able to clean and analyze business data that gives data insights to the stakeholders and helped in business decision-making. It was a great case study to practice and advance my SQL skills.
 
 > You can check out the full documentation: <a href="https://medium.com/@samueloyedele/business-analysis-in-sql-pizza-runner-sql-case-study-212a2b9f6850">here</a>
