@@ -3,8 +3,7 @@
 ## Oyedele Samuel
 
 ## Introduction
-This is a SQL project (case study #2) from Danny’s <a href = "https://8weeksqlchallenge.com/case-study-2/"> 8weeksqlchallenge </a>
-Pizza Runner is a Pizza business that recruit ‘runners’ to deliver fresh prizza from Pizza Runner headquarters to its customers.
+This is a SQL project (case study #2) from Danny’s <a href = "https://8weeksqlchallenge.com/case-study-2/"> 8weeksqlchallenge. </a> Pizza Runner is a Pizza business that recruit ‘runners’ to deliver fresh prizza from Pizza Runner headquarters to its customers.
 
 ## Problem Statement
 > Danny wants to use the data to answer a few simple questions about his customers, especially about the pizzas orders, how much money they’ve spent and also which pizza menu items are their favorite.
@@ -16,13 +15,10 @@ Six (6) tables was provided for this case study:
    
 2.	Customer_orders: Customer pizza orders are captured in the customer_orders table with 1 row for each individual pizza that is part of the order.
 The pizza_id relates to the type of pizza which was ordered whilst the exclusions are the ingredient_id values which should be removed from the pizza and the extras are the ingredient_id values which need to be added to the pizza.
-
 The exclusions and extras columns will need to be cleaned up before using them in the queries.
-
 <i> Note that customers can order multiple pizzas in a single order with varying exclusions and extras values even if the pizza is the same type!</i>
 
 3.	Runner orders:  The runner_order table captures the pickup_time, distance and duration of each orders assigned to a runner. However not all orders are fully completed and can be cancelled by the restaurant or the customer.
-   
 <i>Note: There are some known data issues with this table that need to be cleaned up using them in the queries.</i>
 
 4.	Pizza names: The pizza_names table captures the pizzas available in Pizza Runner.
