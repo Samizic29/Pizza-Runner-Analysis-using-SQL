@@ -1,5 +1,5 @@
 /*
-Danny's Diner business data analysis
+Pizza Runner business analysis
 Skills used: Basic Aggregations, Windows Function, Sub-query, Common Table Expression (CTE), Joins,
 String Transformations, Dealing with null values, Regular Expressions etc. was used to solve the business questions.
 */
@@ -108,6 +108,20 @@ DROP TABLE pizza_recipes;
 --  Rename the new table to the original table name
 ALTER TABLE pizza_recipes_new RENAME TO pizza_recipes;
 
+-- Tables:
+-- Runner table
+SELECT * FROM pizza_runner.runner
+-- Customer orders table
+SELECT * FROM pizza_runner.customer_orders
+-- Runner orders table
+SELECT * FROM pizza_runner.runner_orders
+-- Pizza names table
+SELECT * FROM pizza_runner.pizza_names
+-- Pizza recipes table
+SELECT * FROM pizza_runner.pizza_recipes
+-- Pizza toppings table
+SELECT * FROM pizza_runner.pizza_toppings
+
 -- Business Questions Solved:
 -- Pizza Metrics
 Q -- 1. How many pizzas were ordered?
@@ -210,3 +224,15 @@ FROM pizza_runner.runner_orders
 GROUP BY 1
 ORDER BY 1;
 
+/* Creating Views to store data for later visualization */
+  
+-- How many Vegetarian and Meatlovers were ordered by each customer?
+CREATE VIEW customer_orders AS
+SELECT c.customer_id,
+	   p.pizza_name,
+	   COUNT (c.order_id) total_order
+FROM pizza_runner.customer_orders c
+JOIN pizza_runner.pizza_names p
+ON c.pizza_id = p.pizza_id
+GROUP BY 1, 2
+ORDER BY 1;
